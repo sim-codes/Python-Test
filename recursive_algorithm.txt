@@ -1,0 +1,10 @@
+1. Define a function with 3 parameters numbers_list, target, index=0 i.e. search4number(numbers_list, target, index=0)
+2. Base case, check if index valids in numbers_list
+    IF index => length of numbers_list
+        return False
+3. If index is valid, check if target is equal to numbers_list[index]
+    IF target = numbers_list[index]
+        return True
+4. If none of the above gets executed, Recall the function 
+    ELSE
+        return search4number(numbers_list, target, index+1)
